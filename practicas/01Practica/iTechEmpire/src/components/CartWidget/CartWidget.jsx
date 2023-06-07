@@ -1,9 +1,10 @@
 import logo from "../../assets/images/logo.svg"
+import './CartWidget.css'
 
 const CartWidget = () => {
     return(
         <>
-            <img src={logo} alt="cart-widget" />
+            <img className='imgCarrito' src={logo} alt="cart-widget" />
         </>
     )
 }
