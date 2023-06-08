@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
-import "./footer.css"
+import "./Footer.css"
 
 const Footer = () => {
   useEffect(() => {
