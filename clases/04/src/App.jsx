@@ -26,10 +26,6 @@ Las props son objetos que contienen datos que un componente necesita para render
 Es un objeto que contiene información del componente que puede cambiar durante la ejecución de la App. 
 
 Para crear y manipular el estado tenemos que ayudarnos con funciones propias de la librería React, estas funciones se llaman "Hooks". 
-
-
-
-
 */
 import TituloPrincipal from "./componentes/TituloPrincipal/TituloPrincipal"
 import ItemCount from "./componentes/ItemCount/ItemCount"

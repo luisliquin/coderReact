@@ -10,9 +10,9 @@ const NavBar = () => {
   
     return(
       <header>        
-        <nav class="nav-wrapper">
-        <a href="#" class="brand-logo">iTechEmpire</a>
-          <ul id='nav-mobile' class='right hide-on-med-and-down'>
+        <nav className="nav-wrapper">
+        <a href="#" className="brand-logo">iTechEmpire</a>
+          <ul id='nav-mobile' className='right hide-on-med-and-down'>
             <li><a href="#">Celulares</a></li>
             <li><a href="#">Tablets</a></li>
             <li><a href="#">Notebooks</a></li>
