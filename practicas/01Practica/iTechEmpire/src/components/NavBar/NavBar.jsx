@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css'

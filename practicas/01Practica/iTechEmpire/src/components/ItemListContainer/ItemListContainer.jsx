@@ -1,5 +1,3 @@
-import React from "react";
-
 const ItenListContainer = ({greeting}) => {
     return (
         <h2>{greeting}</h2>
