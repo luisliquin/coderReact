@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import CartWidget from "../CartWidget/CartWidget";
-import '../NavBar/NavBar.css'
+import './NavBar.css'
 
 const NavBar = () => {
   useEffect(() => {
