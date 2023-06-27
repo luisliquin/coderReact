@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import CartWidget from "../CartWidget/CartWidget";
-import "./NavBar";
+import './NavBar.css'
 
 const NavBar = () => {
   useEffect(() => {
-    M.AutoInit(); // Inicializa los componentes de Materialize
+    M.AutoInit();
   }, []);
   
     return(
