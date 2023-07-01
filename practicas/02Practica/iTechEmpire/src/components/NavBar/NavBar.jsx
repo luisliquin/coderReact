@@ -12,11 +12,11 @@ const NavBar = () => {
     return(
       <header> 
         <nav className="nav-wrapper">
-          <a href="#" className="brand-logo">iTechEmpire</a>
+          <Link to="/" className="brand-logo">iTechEmpire</Link>
           <ul id='nav-mobile' className='right hide-on-med-and-down'>
-            <li><a href="#">Celulares</a></li>
-            <li><a href="#">Tablets</a></li>
-            <li><a href="#">Notebooks</a></li>
+            <li><NavLink to="/categoria/1">Celulares</NavLink></li>
+            <li><NavLink to="/categoria/2">Tablets</NavLink></li>
+            <li><NavLink to="/categoria/3">Notebooks</NavLink></li>
             <li><CartWidget/></li>
           </ul>
        </nav>
