@@ -10,10 +10,9 @@ function App() {
   return (
     <> 
       <NavBar/>   
-      <ItemListContainer greeting ={"Bienvenidos"}/>
       <Router>
         <Routes>
-        <Route path="/" element={ <ItemListContainer/> } />
+          <Route path="/" element={ <ItemListContainer/> } />
           <Route path="/categoria/:idCategoria" element={ <ItemListContainer/> } />
           <Route path="/item/:idItem" element={<ItemDetailContainer/>} />
           <Route path="*" element={<h2>Sitio en construcción, vuelva más tarde</h2>}  />

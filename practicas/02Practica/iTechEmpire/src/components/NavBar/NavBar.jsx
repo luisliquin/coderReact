@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import CartWidget from "../CartWidget/CartWidget";
 import './NavBar'
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   useEffect(() => {
@@ -9,9 +10,9 @@ const NavBar = () => {
   }, []);
   
     return(
-      <header>        
+      <header> 
         <nav className="nav-wrapper">
-        <a href="#" className="brand-logo">iTechEmpire</a>
+          <a href="#" className="brand-logo">iTechEmpire</a>
           <ul id='nav-mobile' className='right hide-on-med-and-down'>
             <li><a href="#">Celulares</a></li>
             <li><a href="#">Tablets</a></li>
