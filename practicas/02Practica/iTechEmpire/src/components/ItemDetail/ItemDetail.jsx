@@ -1,13 +1,18 @@
 import React from 'react'
+import './ItemDetail.css';
 
 const ItemDetail = ({id, nombre, precio, img, descripcion}) => {
   return (
-    <div>
-        <h3>Nombre: {nombre} </h3>
+    <div className='container'>
+      <div className='column'>
+      <h3>Nombre: {nombre} </h3>
         <h3>Precio: {precio} </h3>
         <h3>ID: {id} </h3>
         <p>{descripcion}</p>
-        <img src={img} alt={nombre} />
+      </div>
+      <div className='column'>
+        <img className='responsive-img' src={img} alt={nombre} />
+      </div>      
     </div>
   )
 }
