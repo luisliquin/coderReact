@@ -11,7 +11,7 @@ const ItemDetail = ({id, nombre, precio, img, descripcion}) => {
         <p>{descripcion}</p>
       </div>
       <div className='column'>
-        <img className='responsive-img' src={img} alt={nombre} />
+        <img className='materialboxed' src={img} alt={nombre} />
       </div>      
     </div>
   )
