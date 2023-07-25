@@ -5,11 +5,15 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Footer from './components/Footer/Footer'
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import Productos from './components/Productos/Productos'
+import Formulario from './components/Formulario/Formulario'
 
 function App() {
   return (
     <> 
-      <Router>
+      <Productos/>
+      <Formulario/>
+       {/* <Router>
       <NavBar/>   
         <Routes>
           <Route path="/" element={ <ItemListContainer/> } />
@@ -18,7 +22,7 @@ function App() {
           <Route path="*" element={<h2>Sitio en construcción, vuelva más tarde</h2>}  />
         </Routes>
         <Footer/>
-      </Router>
+      </Router>  */}
     </>
   )
 }

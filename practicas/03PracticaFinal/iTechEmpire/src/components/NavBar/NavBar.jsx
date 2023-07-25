@@ -19,7 +19,7 @@ const NavBar = () => {
             <li><NavLink to="/categoria/3">Notebooks</NavLink></li>
             <li><CartWidget/></li>
           </ul>
-       </nav>
+       </nav>       
        </header>
     )
 }
