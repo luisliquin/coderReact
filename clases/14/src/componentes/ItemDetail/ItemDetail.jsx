@@ -24,6 +24,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
     //Ahora acá creo un objeto con el item y la cantidad:
     const item = {id, nombre, precio};
     agregarProducto(item, cantidad);
+    console.log(cantidad)
   }
 
   return (
