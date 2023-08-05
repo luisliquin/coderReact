@@ -9,11 +9,13 @@ import { useContext } from 'react';
 const ItemDetail = ({id, nombre, precio, img, descripcion, stock}) => {
   const [agregarCantidad, setAgregarCantidad] = useState(0);
   const {agregarProducto} = useContext(CarritoContext)
+  console.log('agregarProducto',agregarProducto);
 
   const manejadorCantidad = (cantidad)  => {
     setAgregarCantidad(cantidad);
    
     const item = {id, nombre, precio};
+    console.log('item',item);
     agregarProducto(item, cantidad);
     console.log('cantidad',cantidad)
   }
