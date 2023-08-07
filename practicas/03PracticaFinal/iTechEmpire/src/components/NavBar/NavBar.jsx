@@ -31,6 +31,7 @@ const NavBar = () => {
           <li><NavLink to="/categoria/1">Celulares</NavLink></li>
           <li><NavLink to="/categoria/2">Tablets</NavLink></li>
           <li><NavLink to="/categoria/3">Notebooks</NavLink></li>
+          <li><CartWidget/>Carrito de compra</li>
         </ul>
       </>
     )
