@@ -27,7 +27,6 @@ const NavBar = () => {
             <li><CartWidget/></li>
           </ul>
        </nav>       
-
        <ul className="sidenav" id="mobile-demo">
           <li><NavLink to="/categoria/1">Celulares</NavLink></li>
           <li><NavLink to="/categoria/2">Tablets</NavLink></li>
