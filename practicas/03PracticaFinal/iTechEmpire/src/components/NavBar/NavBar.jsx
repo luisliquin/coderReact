@@ -4,15 +4,22 @@ import CartWidget from "../CartWidget/CartWidget";
 import './NavBar'
 import { Link, NavLink } from "react-router-dom";
 
+const initMaterialize = () => {
+  M.AutoInit();
+};
+
 const NavBar = () => {
   useEffect(() => {
-    M.AutoInit();
+    initMaterialize();
   }, []);
-  
+    
     return(
-      <header> 
+      <> 
         <nav className="nav-wrapper">
           <Link to="/" className="brand-logo">iTechEmpire</Link>
+          <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+            <i className="material-icons">menu</i>
+          </a>
           <ul id='nav-mobile' className='right hide-on-med-and-down'>
             <li><NavLink to="/categoria/1">Celulares</NavLink></li>
             <li><NavLink to="/categoria/2">Tablets</NavLink></li>
@@ -20,7 +27,13 @@ const NavBar = () => {
             <li><CartWidget/></li>
           </ul>
        </nav>       
-       </header>
+
+       <ul className="sidenav" id="mobile-demo">
+          <li><NavLink to="/categoria/1">Celulares</NavLink></li>
+          <li><NavLink to="/categoria/2">Tablets</NavLink></li>
+          <li><NavLink to="/categoria/3">Notebooks</NavLink></li>
+        </ul>
+      </>
     )
 }
 
